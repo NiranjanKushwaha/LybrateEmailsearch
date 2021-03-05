@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+ margin:0;
+ padding:0;
+ box-sizing: border-box;
+ background-color: #DDDCE1;
+ overflow-x: hidden;
+ height: 100vh;
+}
+
+.container-fluid,.row {
+    padding:0;
+    margin: 0;
+
+}
+
+.header {
+     margin:0;
+     padding:0;
+     background-color: blanchedalmond;
+     width:100%;
+     height: 60px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.logo{
+    font-size:xx-large;
+    font-weight: 800;
+}
+
+.logo:hover{
+    color:magenta;
+}
+
+.header .col-3>span{
+   font-weight: 600;
+   color:chocolate;
+}
+.col-3>span:hover{
+    color:coral;
+}
+.card{
+    background-color:#262626;
+}
+
+.card:hover{
+    background-color:grey;
+    cursor: pointer;
+    box-shadow: 9px 8px 17px 4px rgba(0, 0, 0, 0.66);
+    -webkit-box-shadow: 9px 8px 17px 4px rgba(0, 0, 0, 0.66);
+    -moz-box-shadow: 9px 8px 17px 4px rgba(0, 0, 0, 0.66);
+}
+
+
+.card-body p{
+    color:#fff;
+    line-height: 0.7;
+    font-weight: 600;
+}
+
+.card-body p:hover{
+    color:#FE0036;
+    cursor: pointer;
+}
+
+
+.footer{
+    margin: 0;
+    background-color: darkslategrey;
+    display: flex;
+    color:darkturquoise;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 100px !important;
+}
+
+.footer:hover{
+    background-color:dodgerblue;
+    color:greenyellow;
+    font-weight: 600;
+}
+
+@media(max-width:700px){
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #DDDCE1;
+    overflow-x: hidden !important;
+}
+
+.logo {
+    font-size:large;
+    font-weight: 800;
+}
 }
